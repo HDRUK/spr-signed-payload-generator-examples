@@ -49,7 +49,8 @@ int main(void)
     unsigned char *result;
     unsigned int result_len;
 
-    // Generate HMAC-SHA256 signature    result = HMAC(
+    // Generate HMAC-SHA256 signature    
+    result = HMAC(
         EVP_sha256(),
         secret_key,
         strlen(secret_key),
